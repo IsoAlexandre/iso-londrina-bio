@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO Londrina - Instituto de Saúde Ocupacional de Londrina</title>
+<style>
+  :root{
+    --brand-dark:#1a1a5e;
+    --brand-blue:#2b6cb0;
+    --bg-top:#d9ecf5;
+    --card-bg:#ffffff;
+    --text-main:#1a1a2e;
+    --text-sub:#6b7280;
+    --border:#eef0f2;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#f4f6f8;
+    display:flex;
+    justify-content:center;
+  }
+  .page{
+    width:100%;
+    max-width:430px;
+    min-height:100vh;
+    background:var(--card-bg);
+  }
+  .cover{
+    height:150px;
+    background:linear-gradient(180deg,var(--bg-top),#ffffff);
+    position:relative;
+  }
+  .avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    position:absolute;
+    left:50%;
+    bottom:-60px;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .avatar span{
+    font-weight:800;
+    font-size:28px;
+    color:var(--brand-dark);
+    letter-spacing:1px;
+  }
+  .headline{
+    margin-top:72px;
+    padding:0 28px;
+    text-align:center;
+  }
+  .headline h1{
+    font-size:22px;
+    line-height:1.3;
+    color:var(--text-main);
+    margin:0 0 12px;
+  }
+  .headline p{
+    font-size:15px;
+    color:var(--text-sub);
+    line-height:1.5;
+    margin:0 0 24px;
+  }
+  hr{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:0 24px;
+  }
+  .section-title{
+    padding:20px 24px 8px;
+    font-size:20px;
+    font-weight:600;
+    color:var(--text-main);
+  }
+  .links{
+    padding:0 16px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .link-card{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 16px;
+    background:#fafbfc;
+    border:1px solid var(--border);
+    border-radius:14px;
+    text-decoration:none;
+    color:inherit;
+    transition:background .15s ease;
+  }
+  .link-card:hover{ background:#f0f2f4; }
+  .icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+  }
+  .icon svg{ width:22px; height:22px; }
+  .icon.whatsapp{ background:#25D366; }
+  .icon.linkedin{ background:#0A66C2; }
+  .icon.instagram{ background:radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .icon.web{ background:#1f2937; }
+  .link-text{ flex:1; }
+  .link-text .title{
+    font-size:16px;
+    font-weight:600;
+    color:var(--text-main);
+  }
+  .link-text .subtitle{
+    font-size:13px;
+    color:var(--text-sub);
+  }
+  .arrow{ color:#9ca3af; font-size:18px; }
+  .placeholder-note{
+    margin:0 24px 24px;
+    padding:12px 14px;
+    background:#fff7ed;
+    border:1px solid #fed7aa;
+    border-radius:10px;
+    font-size:12.5px;
+    color:#9a3412;
+    line-height:1.5;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="cover">
+      <div class="avatar"><span>ISO</span></div>
+    </div>
+
+    <div class="headline">
+      <h1>ISO LONDRINA — INSTITUTO DE SAÚDE OCUPACIONAL DE LONDRINA</h1>
+      <p>Transformamos Saúde e Segurança ocupacional em diferencial estratégico para o seu negócio!</p>
+    </div>
+
+    <hr>
+
+    <div class="section-title">Encontre-me no</div>
+
+    <div class="links">
+      <!-- WhatsApp -->
+      <a class="link-card" href="https://wa.me/5543PLACEHOLDER" target="_blank" rel="noopener">
+        <div class="icon whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.98.573 3.827 1.562 5.383L2 22l4.735-1.53A9.947 9.947 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.17 8.17 0 0 1-4.37-1.26l-.313-.187-2.812.908.917-2.741-.204-.315A8.18 8.18 0 0 1 3.8 12C3.8 7.47 7.47 3.8 12 3.8S20.2 7.47 20.2 12 16.53 20.2 12 20.2z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="title">WhatsApp</div>
+          <div class="subtitle">Fale com especialista</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="link-card" href="https://www.linkedin.com/company/PLACEHOLDER" target="_blank" rel="noopener">
+        <div class="icon linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.94v5.666H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.56V9h3.554v11.452z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="title">LinkedIn</div>
+          <div class="subtitle">Siga-nos</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <!-- Instagram -->
+      <a class="link-card" href="https://www.instagram.com/PLACEHOLDER" target="_blank" rel="noopener">
+        <div class="icon instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="title">Instagram</div>
+          <div class="subtitle">Siga-nos para novidades</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <!-- Web -->
+      <a class="link-card" href="https://www.PLACEHOLDER.com.br" target="_blank" rel="noopener">
+        <div class="icon web">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="title">Web</div>
+          <div class="subtitle">Visite nosso site</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+
+    <div class="placeholder-note">
+      ⚠️ Links de exemplo (PLACEHOLDER). Edite os atributos <code>href</code> no HTML com os links reais do WhatsApp, LinkedIn, Instagram e site da ISO Londrina antes de publicar.
+    </div>
+  </div>
+</body>
+</html>
